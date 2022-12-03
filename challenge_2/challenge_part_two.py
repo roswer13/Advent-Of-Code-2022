@@ -18,10 +18,12 @@ Following the Elf's instructions for the second column, what would your total sc
 exactly according to your strategy guide?
 """
 
+
 def get_data() -> list:
     with open("challenge_2/data.txt", "r") as file:
         data = file.read()
         return data.split("\n")
+
 
 def get_score(rounds: list) -> int:
     score = 0
